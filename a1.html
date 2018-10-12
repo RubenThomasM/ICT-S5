@@ -10,19 +10,24 @@
         </script>
     </head>
   <body>
+
       <p id="demo"></p>
 
+        <a href="index.html">Main Page</a>
+
       	<h1>Function</h1>
+
           <script>
             //here you call the function to make it work.
             document.write(print("Jesus is our Lord and savior."));
+
           </script>
 
           <script>
             function print(){
               var ha = "HA";
-              /*this line of code tells the program to repeat the ha variable
-              10 times on the p with the demo id */
+              /*this line of code tells the program to repeat the ha
+              variable 10 times on the p with the demo id */
                 document.getElementById("demo").InnerHTML = ha.repeat(10);
             }
           </script>
