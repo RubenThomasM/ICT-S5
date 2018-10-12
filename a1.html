@@ -10,12 +10,19 @@
         </script>
     </head>
   <body>
-    <h1>Function</h1>
-      <script>
-       //here you call the function to make it work.
-       document.write(print("Jesus is our Lord and savior."));
-      </script>
+      <p class="demo"></p>
 
+      	<h1>Function</h1>
+          <script>
+            //here you call the function to make it work.
+            document.write(print("Jesus is our Lord and savior."));
+          </script>
 
+          <script>
+            function print(){
+              var ha = "HA";
+                document.getElementByClass("demo").InnerHTML = ha.repeat(10);
+            }
+          </script>
   </body>
   </html>
