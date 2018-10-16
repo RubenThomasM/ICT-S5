@@ -2,6 +2,14 @@
   <html>
     <head>
       <link rel="stylesheet" type="text/css" href="styles.css">
+
+      <script>
+      function write(message){
+        var prefix = "The truth: ";
+        return prefix + message;
+      }
+      </script>
+      
         <script>
           function print() {
             var ha = "HA";
@@ -10,6 +18,7 @@
               document.getElementById("demo").innerHTML = ha.repeat(10);
           }
         </script>
+
     </head>
   <body>
 
@@ -18,13 +27,7 @@
       	<h1>Functions</h1>
 
           <p id="demo"></p>
-          
-        <script>
-          function write(message){
-            var prefix = "The truth: ";
-            return prefix + message;
-          }
-          </script>
+
           <script>
             //here you call the function to make it work.
             document.write(write("Jesus is our Lord and savior."));
