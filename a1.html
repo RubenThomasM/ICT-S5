@@ -1,0 +1,51 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+
+      <script>
+        function print() {
+          var ha = "HA";
+          /*this line of code tells the program to repeat the ha
+          variable 10 times on the p with the demo id */
+            document.getElementById("demo").innerHTML = ha.repeat(10);
+        }
+      </script>
+
+      <script>
+        function repeat() {
+          var message = "Don't ask what your country can do for you. Ask what you can do for your country!";
+            var prefix = " "
+              for(message= 0;message<=20;message++) {
+                document.write(message + prefix)
+            }
+        }
+      </script>
+      <script>
+      function write(message){
+        var prefix = "The truth: ";
+        return prefix + message;
+      }
+      </script>
+
+    </head>
+  <body>
+
+        <a href="index.html">Main Page</a>
+
+      	<h1>Functions</h1>
+
+        <p id="demo"></p>
+
+          <script>
+            //here I'm call the function to make it work.
+            document.write(write("Jesus is our Lord and savior."));
+            print();
+
+          </script>
+
+
+
+
+  </body>
+  </html>
