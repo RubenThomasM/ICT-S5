@@ -4,16 +4,33 @@
       <link rel="stylesheet" type="text/css" href="../css/styles.css">
       <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
 
-      <style>
-      html{
-          font-family: 'Courgette', cursive;
+        <style>
+          html{
+            font-family: 'Courgette', cursive;
+          }
+        </style>
+      </head>
+    <script>
+      function maryjane(){
+      var msg = document.getElementById('msg').value;
+      var i;
+        for (i = 0; i < 11; i++) {
+          msg += i + "<br>";
+        }
+      document.getElementById("holy").innerHTML = text;
       }
-      </style>
-    </head>
+    </script>
+
   <body>
+
       <a href="../index.html">Main Page</a>
-        	<h1>Javascript</h1>
+        <h1>Javascript</h1>
           <h2>Assignment: Multiply Text!</h2>
+
+        <input type="text" id="msg">
+      <button type="button" onclick="maryjane()"></button>
+
+    <p id="holy"></p>
 
 
 
