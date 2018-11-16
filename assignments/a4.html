@@ -13,11 +13,12 @@
     <script>
       function maryjane(){
       var msg = document.getElementById('msg').value;
+      var thing = "";
       var i;
         for (i = 0; i < 11; i++) {
-         msg = msg++;
+         thing = msg + "<br>";
         }
-      document.getElementById("holy").innerHTML = msg;
+      document.getElementById("holy").innerHTML = thing;
       }
     </script>
 
