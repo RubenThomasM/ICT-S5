@@ -18,3 +18,7 @@ a{
 .yolo {
   height: 5%;
 }
+
+.warning {
+  color: red;
+}
