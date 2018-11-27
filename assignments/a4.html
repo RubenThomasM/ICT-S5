@@ -12,18 +12,12 @@
       </head>
     <script>
       function maryjane(){
-      var msg = document.getElementById('msg').value;
-      var thing = "";
+      var msg = document.getElementById('msg');
       var i;
-        if (thing != "") {
-
-        for (i = 0; i < 10; i++) {
-         thing += msg + "<br>";
+        for (i = 0; i < 11; i++) {
+          msg += i + "<br>";
         }
-      document.getElementById("holy").innerHTML = thing;
-    } else {
-      document.getElementById("warning").innerHTML="Warning! The value isn't acceptable!";
-    }
+      document.getElementById("holy").innerHTML = msg;
       }
     </script>
 
@@ -33,11 +27,10 @@
         <h1>Javascript</h1>
           <h2>Assignment: Multiply Text!</h2>
 
-        <input type="text" id="msg" placeholder="Write Something Here!">
+        <input type="text" id="msg">
       <button type="button" onclick="maryjane()">Repeat</button>
 
     <p id="holy"></p>
-    <p id="warning"></p>
 
 
 
